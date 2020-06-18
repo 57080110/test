@@ -13,11 +13,15 @@
       <legend>textファイル書き込み型todoリスト（入力画面）</legend>
       <a href="todo_txt_read.php">一覧画面</a>
       <div>
-        todo: <input type="text" name="todo">
+        名前:<br /><input type="text" name="name" size="50" value=""><br />
       </div>
       <div>
-        deadline: <input type="date" name="deadline">
+        E-mail:<br /> <input type="text" name="mail" size="50" value=""><br />
       </div>
+      <div>
+        趣味はなんですか:<br /> <input type="text" name="hobby" size="50" value=""><br />
+      </div>
+
       <div>
         <button>submit</button>
       </div>

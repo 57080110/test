@@ -2,7 +2,7 @@
 // 出力用の文字列（ここに読み込んだデータをタグに入れた形式で追加していく）
 $str = "";
 // ファイルを開く処理
-$file = fopen('data/todo.txt', 'r');
+$file = fopen('data/data.csv', 'r');
 
 // ファイルロックの処理
 flock($file, LOCK_EX);

@@ -3,15 +3,16 @@ var_dump($_POST);
 // exit();
 
 // データの受取
-$todo = $_POST['todo'];
-$deadline =$_POST['deadline'];
+$name = $_POST['name'];
+$mail =$_POST['mail'];
+$hobby = $_POST['hobby'];
 
 
 // 書き込みデータの作成（スペース区切りで最後に改行コードを追加）
-$write_data = "{$todo} {$deadline}\n";
+$write_data = "{$name} {$mail} {$hobby}\n";
 
 // ファイルを開く処理
-$file = fopen('data/todo.txt', 'a');
+$file = fopen('data/data.csv', 'a');
 
 // ファイルロックの処理
 flock($file,LOCK_EX);
